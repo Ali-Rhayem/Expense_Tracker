@@ -42,7 +42,7 @@ class _ExpensesState extends State<Expenses> {
         title: const Text("Flutter Expense Tracker"),
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: _openAddExpenseOverlay,
             icon: const Icon(Icons.add),
           ),
         ],
