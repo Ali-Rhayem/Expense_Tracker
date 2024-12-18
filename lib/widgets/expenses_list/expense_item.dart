@@ -22,7 +22,7 @@ class ExpenseItem extends StatelessWidget {
                 Text('\$${expense.amount.toStringAsFixed(2)}'),
                 const Spacer(),
                 Row(children: [
-                  const Icon(Icons.calendar_today),
+                  Icon(categoryIcons[expense.category]),
                   const SizedBox(width: 4),
                   Text(expense.date.toString()),
                 ],),
