@@ -6,12 +6,12 @@ final formatter = DateFormat.yMd();
 
 const uuid = Uuid();
 
-enum Category { food, travel, lesure, work }
+enum Category { food, travel, leisure, work }
 
 const categoryIcons = {
   Category.food: Icons.lunch_dining,
   Category.travel: Icons.flight_takeoff,
-  Category.lesure: Icons.movie,
+  Category.leisure: Icons.movie,
   Category.work: Icons.work,
 };
 
@@ -36,7 +36,7 @@ class Expense {
 
 class ExpenseBucket {
   const ExpenseBucket({required this.category, required this.expenses});
-  
+
   final Category category;
   final List<Expense> expenses;
 
