@@ -17,10 +17,16 @@ void main() {
         useMaterial3: true,
         colorScheme: kDarkColorScheme,
         cardTheme: const CardTheme().copyWith(
-          color: kColorScheme.secondaryContainer,
+          color: kDarkColorScheme.secondaryContainer,
           margin: const EdgeInsets.symmetric(
             horizontal: 16,
             vertical: 8,
+          ),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kDarkColorScheme.primaryContainer,
+            foregroundColor: kDarkColorScheme.onPrimaryContainer,
           ),
         ),
       ),
